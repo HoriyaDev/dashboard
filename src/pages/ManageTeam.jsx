@@ -2,7 +2,7 @@ import React from 'react'
 
 const ManageTeam = () => {
   return (
-    <div>Manageteam</div>
+    <div>Manageteamvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</div>
   )
 }
 
