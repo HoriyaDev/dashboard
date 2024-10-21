@@ -4,7 +4,7 @@ import { PieChart } from '@mui/x-charts/PieChart';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { chartData } from '../utils/constant';
-import Grid from '@mui/material/Grid2'; 
+import Grid from '@mui/material/Grid2';
 
 
 export default function Cards() {
@@ -18,13 +18,13 @@ export default function Cards() {
               backgroundColor="#00416A"
               alignItems="center"
               justifyContent="space-evenly"
-              
+
               borderRadius={2}
               height="120px"
               width='18vw'
               boxShadow={2}
             >
-              
+
               <Box
                 display="flex"
                 flexDirection="column"
@@ -38,19 +38,18 @@ export default function Cards() {
               </Box>
 
               {/* Right Side: Pie Chart */}
-              <Box display='flex' alignItems='start' justifyContent='flex-end' backgroundColor='red'  width="40%" height="100%">
-                <PieChart sx={{marginLeft:'80%'}} 
-                  series={[
-                    {
-                      data: chart.series,
-                      innerRadius: 15, // Creates the donut shape
-                      outerRadius: 20, // Controls the outer size
-                    },
-                  ]}
-                  width={50} // Adjusted width to make the chart visible
-                  height={100} // Adjusted height to make the chart visible
-                />
-              </Box>
+              <PieChart sx={{ marginLeft: '80%' }}
+                series={[
+                  {
+                    data: chart.series,
+                    innerRadius: 15, // Creates the donut shape
+                    outerRadius: 20, // Controls the outer size
+                  },
+                ]}
+                width={50} // Adjusted width to make the chart visible
+                height={50} // Adjusted height to make the chart visible
+              />
+
             </Box>
           </Grid>
         ))}
