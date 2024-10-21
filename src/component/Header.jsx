@@ -13,15 +13,15 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import Grid from '@mui/material/Grid';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const drawerWidth = 250;
+const drawerWidth = 240;
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: '#0C2340',
-  width: '100%',  // Full width in the grid
+  backgroundColor: '#00416A',
+  width: '20%', 
   [theme.breakpoints.up('sm')]: {
-    width: '100%',  // Full width for larger screens
+    width: '20%',  
   },
 }));
 
@@ -56,9 +56,8 @@ export default function Header({ onOpen, open }) {
   return (
     <Box sx={{ flexGrow: 1, width: open ? `calc(100% - ${drawerWidth}px)` : '100%', transition: 'width 0.3s ease' }}>
       <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', paddingLeft: 2, paddingRight: 2 }} disableGutters>
-          <Grid container spacing={2}>
-            <Grid item xs={8}> {/* Take 8 columns for the header */}
+        <Toolbar sx={{ display: 'flex',  paddingLeft: 2, paddingRight: 2 }} disableGutters>
+          
               <IconButton onClick={onOpen} sx={{ color: 'white' }}>
                 <MenuIcon />
               </IconButton>
@@ -71,10 +70,10 @@ export default function Header({ onOpen, open }) {
                   inputProps={{ 'aria-label': 'search' }}
                 />
               </Search>
-            </Grid>
+           
 
-            <Grid item xs={4}> {/* Take 4 columns for the icons */}
-              <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+            {/* Take 4 columns for the icons */}
+              <Box sx={{ display: 'flex', marginLeft:'auto' }}>
                 <IconButton>
                   <DarkModeOutlinedIcon sx={{ color: 'white' }} />
                 </IconButton>
@@ -88,8 +87,8 @@ export default function Header({ onOpen, open }) {
                   <PersonOutlineOutlinedIcon sx={{ color: 'white' }} />
                 </IconButton>
               </Box>
-            </Grid>
-          </Grid>
+           
+        
         </Toolbar>
       </AppBar>
     </Box>
