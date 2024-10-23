@@ -76,3 +76,9 @@ export const chartData = [
       percent:'40%'
     },
   ];
+   export const balanceSheet = [
+    { year: 2020, currAss: 10000, nCurrAss: 5000, curLia: 8000, nCurLia: 2000, capStock: 12000, retEarn: 3000, treas: 1000 },
+    { year: 2021, currAss: 12000, nCurrAss: 6000, curLia: 9000, nCurLia: 2500, capStock: 13000, retEarn: 3500, treas: 1500 },
+    { year: 2022, currAss: 15000, nCurrAss: 7000, curLia: 10000, nCurLia: 3000, capStock: 14000, retEarn: 4000, treas: 2000 },
+    { year: 2023, currAss: 17000, nCurrAss: 8000, curLia: 11000, nCurLia: 3500, capStock: 15000, retEarn: 4500, treas: 2500 },
+  ];

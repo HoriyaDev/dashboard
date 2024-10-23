@@ -21,7 +21,7 @@ export default function Cards() {
 
               borderRadius={2}
               height="120px"
-              width='18vw'
+              width='180px'
               boxShadow={2}
             >
 
