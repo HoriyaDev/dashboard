@@ -82,3 +82,21 @@ export const chartData = [
     { year: 2022, currAss: 15000, nCurrAss: 7000, curLia: 10000, nCurLia: 3000, capStock: 14000, retEarn: 4000, treas: 2000 },
     { year: 2023, currAss: 17000, nCurrAss: 8000, curLia: 11000, nCurLia: 3500, capStock: 15000, retEarn: 4500, treas: 2500 },
   ];
+  export const tableData = [
+    { id: "01e4ds", name: "John Doe", date: "2024-10-10", price: "$43.56" },
+    { id: "02a3bt", name: "Jane Smith", date: "2024-09-12", price: "$21.99" },
+    { id: "03b6yt", name: "Michael Johnson", date: "2024-08-25", price: "$17.50" },
+    { id: "04c8uw", name: "Emily Davis", date: "2024-07-30", price: "$99.99" },
+    { id: "05d7rt", name: "Robert Brown", date: "2024-06-14", price: "$15.99" },
+    { id: "06e9pm", name: "Linda Williams", date: "2024-05-19", price: "$49.00" },
+    { id: "07f0lk", name: "David Miller", date: "2024-04-07", price: "$32.75" },
+    { id: "08g1oa", name: "Barbara Wilson", date: "2024-03-22", price: "$18.65" },
+    { id: "09h2iq", name: "James Taylor", date: "2024-02-09", price: "$55.45" },
+    { id: "10i3zp", name: "Mary Anderson", date: "2024-01-16", price: "$27.85" },
+    { id: "11j4bx", name: "Christopher Thomas", date: "2023-12-28", price: "$39.99" },
+    { id: "12k5mt", name: "Patricia Martinez", date: "2023-11-05", price: "$23.50" },
+    { id: "13l6nh", name: "Matthew Moore", date: "2023-10-11", price: "$42.99" },
+    { id: "14m7qy", name: "Jennifer Lee", date: "2023-09-23", price: "$75.00" },
+    { id: "15n8ds", name: "Charles Harris", date: "2023-08-31", price: "$60.25" }
+  ];
+  

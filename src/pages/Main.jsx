@@ -80,7 +80,7 @@ export default function Main(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+      <AppBar open={open} sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
         <Toolbar>
          
           <Header onOpen = {handleDrawerOpen}  open ={open}/>

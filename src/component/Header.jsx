@@ -55,7 +55,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Header({ onOpen, open }) {
   return (
     <Box sx={{ flexGrow: 1, width: open ? `calc(100% - ${drawerWidth}px)` : '100%', transition: 'width 0.3s ease' }}>
-      <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+      <AppBar  position='static' sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
         <Toolbar sx={{ display: 'flex',  paddingLeft: 2, paddingRight: 2 }} disableGutters>
           
               <IconButton onClick={onOpen} sx={{ color: 'white' }}>
