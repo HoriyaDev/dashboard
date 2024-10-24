@@ -18,10 +18,12 @@ export default function CustomTable() {
         overflowY: 'auto', 
         backgroundColor: '#00416A', // Set background color to blue
         width: '350px',
-        marginTop: '5px' // Set width to 350px
-      }} 
+        marginTop: '5px',
+        
+    }} 
     >
-      <Table sx={{ width: '100%', borderCollapse: 'collapse' }} aria-label="simple table"> {/* Set width to 100% to fill the container */}
+      <Table sx={{ width: '100%', borderCollapse: 'collapse' ,marginLeft:'3px' ,
+        marginRight:'3px' , }} aria-label="simple table"> {/* Set width to 100% to fill the container */}
         <TableHead sx={{ borderBottom: '2px solid #0c2340' }} >
           <TableRow>
             <TableCell style={{ color: 'white', fontWeight: 'bold' }}>Recent transactions</TableCell> {/* Set text color to white for visibility */}
@@ -48,7 +50,8 @@ export default function CustomTable() {
                   borderRadius: '5px', 
                   padding: '4px 8px', // Adjust padding for a smaller background
                   display: 'inline-block',
-                  marginTop:'20px' // Make the background fit the text
+                  marginTop:'20px',
+                  marginRight:'5px' // Make the background fit the text
                 }}
               >
                 {row.price}

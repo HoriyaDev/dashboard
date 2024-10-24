@@ -6,8 +6,6 @@ import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import ManageTeam from './ManageTeam';
 import SideBar from '../component/SideBar';
 import Header from '../component/Header' 
 import Title from '../component/Title'
@@ -27,8 +25,10 @@ const StyledMain = styled('main', { shouldForwardProp: (prop) => prop !== 'open'
       duration: theme.transitions.duration.leavingScreen,
     }),
     marginLeft: open ? `${drawerWidth}px` : 0,  // Only add margin when drawer is open
-    width: open ? `calc(100% - ${drawerWidth}px)` : '100%', // Adjust width based on drawer state
-    backgroundColor: '#0C2340',  // Background color
+    width: open ? `calc(100% - ${drawerWidth}px)` : '100%',
+    height:'1090px', // Adjust width based on drawer state
+    backgroundColor: '#0C2340', 
+ 
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,

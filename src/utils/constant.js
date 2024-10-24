@@ -100,3 +100,121 @@ export const chartData = [
     { id: "15n8ds", name: "Charles Harris", date: "2023-08-31", price: "$60.25" }
   ];
   
+
+  export const revenueData = [
+    {
+      name: "plane",
+      uv: 4000,
+      pv: 2400,
+      amt: 2400,
+    },
+    {
+      name: "helicopter",
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "boat",
+      uv: 2000,
+      pv: 9800,
+      amt: 2290,
+    },
+    {
+      name: "train",
+      uv: 2780,
+      pv: 3908,
+      amt: 2000,
+    },
+    {
+      name: "subway",
+      uv: 1890,
+      pv: 4800,
+      amt: 2181,
+    },
+    {
+      name: "bus",
+      uv: 2390,
+      pv: 3800,
+      amt: 2500,
+    },
+    {
+      name: "car",
+      uv: 3490,
+      pv: 4300,
+      amt: 2100,
+    },
+    {
+      name: "bicycle",
+      uv: 3590,
+      pv: 4000,
+      amt: 2340,
+    },
+    {
+      name: "horse",
+      uv: 3690,
+      pv: 4100,
+      amt: 2300,
+    },
+    {
+      name: "others",
+      uv: 3790,
+      pv: 4200,
+      amt: 2600,
+    },
+  ];
+  
+
+
+  export   const barData = [
+    {
+      name: "AD",
+      uv: 450,   // Modified value
+      pv: 250,   // Modified value
+      amt: 200,  // Modified value
+      count: 50, // Modified value
+    },
+    {
+      name: "AE",
+      uv: 300,   // Modified value
+      pv: 150,   // Modified value
+      amt: 450,  // Modified value
+      count: 100, // Modified value
+    },
+    {
+      name: "AF",
+      uv: 200,   // Modified value
+      pv: 500,   // Modified value
+      amt: 150,  // Modified value
+      count: 200, // Modified value
+    },
+    {
+      name: "AG",
+      uv: 400,   // Modified value
+      pv: 350,   // Modified value
+      amt: 100,  // Modified value
+      count: 250, // Modified value
+    },
+    {
+      name: "AH",
+      uv: 150,   // Modified value
+      pv: 450,   // Modified value
+      amt: 300,  // Modified value
+      count: 150, // Modified value
+    },
+    {
+      name: "AL",
+      uv: 250,   // Modified value
+      pv: 350,   // Modified value
+      amt: 400,  // Modified value
+      count: 200, // Modified value
+    },
+    {
+      name: "AM",
+      uv: 350,   // Modified value
+      pv: 300,   // Modified value
+      amt: 250,  // Modified value
+      count: 400, // Modified value
+    },
+  ];
+  

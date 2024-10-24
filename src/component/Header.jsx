@@ -10,7 +10,7 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import Grid from '@mui/material/Grid';
+
 import MenuIcon from '@mui/icons-material/Menu';
 
 const drawerWidth = 240;
@@ -38,7 +38,7 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'white',
-  width: '100%',  // Take the full width of the search container
+  width: '100%',  
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
@@ -55,7 +55,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Header({ onOpen, open }) {
   return (
     <Box sx={{ flexGrow: 1, width: open ? `calc(100% - ${drawerWidth}px)` : '100%', transition: 'width 0.3s ease' }}>
-      <AppBar  position='static' sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+      <AppBar  position='static' sx={{ backgroundColor: '#0C2340', boxShadow: 'none' }}>
         <Toolbar sx={{ display: 'flex',  paddingLeft: 2, paddingRight: 2 }} disableGutters>
           
               <IconButton onClick={onOpen} sx={{ color: 'white' }}>
