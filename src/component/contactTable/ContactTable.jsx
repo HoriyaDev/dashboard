@@ -4,12 +4,35 @@ import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 const columns = [
   { field: 'id', headerName: 'ID', flex: 1 },
   { field: 'name', headerName: 'Name', flex: 1 },
-  { field: 'age', headerName: 'Age', type: 'number', flex: 1 },
+  {
+    field: 'age',
+    headerName: 'Age',
+    type: 'number',
+    flex: 1,
+    cellClassName: 'left-align',
+  },
   { field: 'phoneNumber', headerName: 'Phone Number', flex: 1 },
-  { field: 'email', headerName: 'Email', flex: 1 },
-  { field: 'address', headerName: 'Address', flex: 1 },
-  { field: 'city', headerName: 'City', flex: 1 },
-  { field: 'zip-code', headerName: 'Zip Code', flex: 1 },
+  {
+    field: 'email', // New column for email addresses
+    headerName: 'Email',
+    flex: 1,
+  },
+  {
+    field: 'address', // New column for email addresses
+    headerName: 'Address',
+    flex: 1,
+  },
+  {
+    field: 'city', 
+    headerName: 'City',
+    flex: 1,
+  },
+  {
+    field: 'zip-code', 
+    headerName: 'Zip Code',
+    flex: 1,
+  },
+ 
 ];
 
 const rows = [
@@ -30,6 +53,7 @@ const rows = [
   { id: 15, 'register-id': 'REG015', name: 'Kevin Hall', age: 29, phoneNumber: '789-012-3456', email: 'kevinh@example.com', address: '456 Oak Ln', city: 'Philadelphia', 'zip-code': '19101' },
 ];
 
+
 export default function ContactTable() {
   return (
     <div style={{ height: 400, width: '100%' }}>
@@ -38,18 +62,8 @@ export default function ContactTable() {
         columns={columns}
         pageSize={5}
         rowsPerPageOptions={[5]}
-        components={{
-          Toolbar: GridToolbar,
-        }}
-        sx={{
-          '& .MuiDataGrid-columnHeaders': {
-            backgroundColor: 'red', 
-            color: 'white', 
-          },
-          '& .MuiDataGrid-footerContainer': {
-            backgroundColor: '#1976d2', // Footer background color
-            color: 'white', // Footer text color
-          },
+        slots={{
+          toolbar: GridToolbar,
         }}
       />
     </div>
