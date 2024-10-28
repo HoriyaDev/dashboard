@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+.MuiDataGrid-row--borderBottom .css-yseucu-MuiDataGrid-columnHeaderRow{
+background-color: red !important;
+}
+
+
+.css-5gytsl-MuiDataGrid-root .MuiDataGrid-container--top[role=row],
+.css-5gytsl-MuiDataGrid-root .MuiDataGrid-container--bottom[role=row] {
+  background: red !important;
+}

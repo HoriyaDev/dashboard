@@ -8,7 +8,7 @@ import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import SideBar from '../component/SideBar';
 import Header from '../component/Header';
-import TeamTable from '../component/teamTable/TeamTable';
+import Questions from '../component/faq/Questions';
 import { Typography , Box } from '@mui/material';
 
 const drawerWidth = 240;
@@ -54,7 +54,7 @@ const AppBar = styled(MuiAppBar, {
   ],
 }));
 
-export default function ManageTeam(props) {
+export default function FAQ(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(true);
 
@@ -78,11 +78,11 @@ export default function ManageTeam(props) {
       </Drawer>
       <StyledMain open={open}>
       <Box marginTop={7} marginBottom={2}>
-      <Typography fontWeight='bold' fontSize={30}>Team</Typography>
-      <Typography color='#17B169'>Managing the Team Members</Typography>
+      <Typography fontWeight='bold' fontSize={30}>FAQ</Typography>
+      <Typography color='#17B169'>Frequently Asked Questions Page</Typography>
       </Box>
-
-      <TeamTable />
+       <Questions/>
+      
 
       </StyledMain>
     </Box>

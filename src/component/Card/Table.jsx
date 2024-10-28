@@ -14,7 +14,7 @@ export default function CustomTable() {
     <TableContainer 
       component={Paper} 
       style={{ 
-        maxHeight: 390, 
+        maxHeight: 400, 
         overflowY: 'auto', 
         backgroundColor: '#00416A', // Set background color to blue
         width: '350px',

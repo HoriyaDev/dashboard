@@ -19,15 +19,16 @@ import Avatar from '@mui/material/Avatar';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import Button from '@mui/material/Button';
 import { Items } from '../utils/constant';
+import { NavLink } from 'react-router-dom';
 
 
 const drawerWidth = 240;
 
-function SideBar({onClose , window}) {
-  
+function SideBar({ onClose, window }) {
+
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [isClosing, setIsClosing] = useState(false);
- 
+
+
 
 
   const drawer = (
@@ -42,11 +43,7 @@ function SideBar({onClose , window}) {
         }}
       >
         <Typography variant="h6">ADMINIS</Typography>
-        <IconButton onClick={onClose}>
-          <MenuIcon sx={{
-            color: 'white',
-          }} />
-        </IconButton>
+
       </Box>
 
 
@@ -89,49 +86,45 @@ function SideBar({onClose , window}) {
       </Box>
 
       {/* Navigation List */}
+
       <List>
-        {Items.map((item, index) => {
-          if (item.kind === 'header') {
-            return (
-              <ListItem key={index}
-              >
-                <ListItemText primary={item.title} sx={{ fontWeight: 'bold', color: 'white', marginLeft: '7px' }} />
-              </ListItem>
-            );
-          } else {
-            return (
-
-
-              <ListItem key={item.segment} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon sx={{
-                    marginLeft: '15px',
-                    color: 'white',
-                    px: '5px'
-
-                  }}>
-                    {item.icon}
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={item.title}
-                    primaryTypographyProps={{
-                      sx: {
-                        marginLeft: '-10px',
-                        fontSize: '15px',
-                        color: 'white',
-                        textTransform: 'none',
-                      }
-                    }}
-                  />
-
-                </ListItemButton>
-              </ListItem>
-
-            );
-          }
-        })}
-      </List>
-
+  {Items.map((item, index) => {
+    if (item.kind === 'header') {
+      return (
+        <ListItem key={index}>
+          <ListItemText primary={item.title} sx={{ fontWeight: 'bold', color: 'white', marginLeft: '7px' }} />
+        </ListItem>
+      );
+    } else {
+      return (
+        <ListItem key={item.segment} disablePadding>
+          <ListItemButton 
+            component={NavLink} 
+            to={`/${item.segment}`} 
+            style={({ isActive }) => ({
+              fontWeight: isActive ? 'bold' : 'normal',
+              color: isActive ? 'red' : 'inherit', // Change text color based on active state
+            })}
+          >
+            <ListItemIcon sx={{ marginLeft: '15px', color: 'white', px: '5px' }}>
+              {item.icon}
+            </ListItemIcon>
+            <ListItemText
+              primary={item.title}
+              primaryTypographyProps={{
+                sx: {
+                  marginLeft: '-10px',
+                  fontSize: '15px',
+                  color: 'inherit', // Inherit color from ListItemButton
+                },
+              }}
+            />
+          </ListItemButton>
+        </ListItem>
+      );
+    }
+  })}
+</List>
 
     </div>
   );
@@ -159,8 +152,7 @@ function SideBar({onClose , window}) {
           container={container}
           variant="temporary"
           open={mobileOpen}
-          //onTransitionEnd={handleDrawerTransitionEnd}
-         // onClose={handleDrawerClose}
+
           ModalProps={{
             keepMounted: true,
           }}

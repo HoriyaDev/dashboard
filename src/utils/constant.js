@@ -24,7 +24,7 @@ export const Items = [
     { segment: 'calender', title: 'Calender', icon: <CalendarTodayOutlinedIcon /> },
     { segment: 'faq-page', title: 'FAQ page', icon: <HelpOutlineOutlinedIcon /> },
     { kind: 'header', title: 'Charts' },
-    { segment: 'lbar-chart', title: 'Bar Chart', icon: <BarChartOutlinedIcon /> },
+    { segment: 'bar-chart', title: 'Bar Chart', icon: <BarChartOutlinedIcon /> },
     { segment: 'pie-chart', title: 'Pie Chart', icon: <PieChartOutlinedIcon /> },
     { segment: 'line-chart', title: 'Line Chart', icon: <TimelineOutlinedIcon /> },
     { segment: 'geography-chart', title: 'Geography Chart', icon: <MapOutlinedIcon /> },
@@ -216,5 +216,49 @@ export const chartData = [
       amt: 250,  // Modified value
       count: 400, // Modified value
     },
+  ];
+  
+
+   export const faqs = [
+    {
+      question: "What is your return policy?",
+      answer: "Our return policy allows for returns within 30 days of purchase. Items must be in their original condition with all tags attached. Please contact our support team to initiate a return."
+    },
+    {
+      question: "How long does shipping take?",
+      answer: "Shipping times vary based on your location. Typically, orders are processed within 2-3 business days and arrive within 5-7 business days. International shipping may take longer."
+    },
+    {
+      question: "Do you offer international shipping?",
+      answer: "Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary depending on your location."
+    },
+    {
+      question: "How can I track my order?",
+      answer: "Once your order is shipped, you will receive a tracking number via email. You can use this number to track your order on our website or the carrier's website."
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer: "We accept major credit cards, PayPal, Apple Pay, and Google Pay. All payments are processed securely."
+    },
+    {
+      question: "How do I create an account?",
+      answer: "To create an account, click on the 'Sign Up' button at the top of our homepage. Fill in the required information, and you’ll be ready to start using our services."
+    },
+    {
+      question: "Can I cancel my order?",
+      answer: "You can cancel your order within 24 hours of placing it. After 24 hours, the order may have already been processed and shipped, making cancellation more difficult. Please contact support for assistance."
+    },
+    {
+      question: "Do you offer discounts or promotions?",
+      answer: "Yes, we offer seasonal discounts and occasional promotions. Sign up for our newsletter or follow us on social media to stay updated."
+    },
+    {
+      question: "What should I do if I receive a damaged item?",
+      answer: "If you receive a damaged item, please contact our support team immediately. We will guide you through the process of returning the item and getting a replacement or refund."
+    },
+    {
+      question: "How do I reset my password?",
+      answer: "If you've forgotten your password, click on the 'Forgot Password' link on the login page. Follow the instructions to reset your password via email."
+    }
   ];
   

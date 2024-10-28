@@ -8,7 +8,7 @@ import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import SideBar from '../component/SideBar';
 import Header from '../component/Header';
-import TeamTable from '../component/teamTable/TeamTable';
+import LineGraph from '../Graphs/LineGraph';
 import { Typography , Box } from '@mui/material';
 
 const drawerWidth = 240;
@@ -23,7 +23,7 @@ const StyledMain = styled('main', { shouldForwardProp: (prop) => prop !== 'open'
     }),
     marginLeft: open ? `${drawerWidth}px` : 0,  
     width: open ? `calc(100% - ${drawerWidth}px)` : '100%',
-    height: '100vh', // Adjust width based on drawer state
+    height: 'full', // Adjust width based on drawer state
     backgroundColor: theme.palette.mode === 'dark' ? '#0C2340' : '#f5f5f5', // Use theme mode for background color
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.easeOut,
@@ -54,7 +54,7 @@ const AppBar = styled(MuiAppBar, {
   ],
 }));
 
-export default function ManageTeam(props) {
+export default function PieChart(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(true);
 
@@ -78,11 +78,11 @@ export default function ManageTeam(props) {
       </Drawer>
       <StyledMain open={open}>
       <Box marginTop={7} marginBottom={2}>
-      <Typography fontWeight='bold' fontSize={30}>Team</Typography>
-      <Typography color='#17B169'>Managing the Team Members</Typography>
+      <Typography fontWeight='bold' fontSize={30}>Line Chart</Typography>
+      <Typography color='#17B169'>Simple Line Chart</Typography>
       </Box>
-
-      <TeamTable />
+       <LineGraph />
+      
 
       </StyledMain>
     </Box>

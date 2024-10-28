@@ -8,7 +8,7 @@ import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import SideBar from '../component/SideBar';
 import Header from '../component/Header';
-import TeamTable from '../component/teamTable/TeamTable';
+import BarGraph from '../component/Bar'
 import { Typography , Box } from '@mui/material';
 
 const drawerWidth = 240;
@@ -54,7 +54,7 @@ const AppBar = styled(MuiAppBar, {
   ],
 }));
 
-export default function ManageTeam(props) {
+export default function BarChart(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(true);
 
@@ -77,12 +77,12 @@ export default function ManageTeam(props) {
         < SideBar    window={props.window} />
       </Drawer>
       <StyledMain open={open}>
-      <Box marginTop={7} marginBottom={2}>
-      <Typography fontWeight='bold' fontSize={30}>Team</Typography>
-      <Typography color='#17B169'>Managing the Team Members</Typography>
+      <Box marginTop={7} marginBottom={2} >
+      <Typography fontWeight='bold' fontSize={30}>BAR CHART</Typography>
+      <Typography color='#17B169'>Simple Bar Chart</Typography>
       </Box>
-
-      <TeamTable />
+       <BarGraph  />
+      
 
       </StyledMain>
     </Box>

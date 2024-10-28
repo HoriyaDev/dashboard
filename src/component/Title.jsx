@@ -16,7 +16,7 @@ const Title = () => {
     }}>
           <Box>
           <Typography sx={{
-            color:'white',
+            
             fontWeight:'bold',
             fontSize:'20px'
           }}>DASHBOARD</Typography>

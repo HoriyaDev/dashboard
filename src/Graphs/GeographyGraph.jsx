@@ -11,7 +11,7 @@ export const data = [
   ["RU", 700],
 ];
 
-export function GeographyChart() {
+export function Geography() {
   return (
     <Chart
       chartEvents={[
@@ -28,7 +28,7 @@ export function GeographyChart() {
       ]}
       chartType="GeoChart"
       width="100%"
-      height="240px"
+      height='80%'
       data={data}
       options={{
         backgroundColor: "transparent", // Set background to transparent

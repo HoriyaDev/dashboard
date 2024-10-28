@@ -52,13 +52,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function Header({ onOpen, open }) {
+export default function Header({onToggle ,open , checked , onChange }) {
   return (
     <Box sx={{ flexGrow: 1, width: open ? `calc(100% - ${drawerWidth}px)` : '100%', transition: 'width 0.3s ease' }}>
       <AppBar  position='static' sx={{ backgroundColor: '#0C2340', boxShadow: 'none' }}>
         <Toolbar sx={{ display: 'flex',  paddingLeft: 2, paddingRight: 2 }} disableGutters>
           
-              <IconButton onClick={onOpen} sx={{ color: 'white' }}>
+              <IconButton onClick={onToggle} sx={{ color: 'white' }}>
                 <MenuIcon />
               </IconButton>
               <Search>
@@ -74,7 +74,7 @@ export default function Header({ onOpen, open }) {
 
             {/* Take 4 columns for the icons */}
               <Box sx={{ display: 'flex', marginLeft:'auto' }}>
-                <IconButton>
+                <IconButton onClick={onChange}>
                   <DarkModeOutlinedIcon sx={{ color: 'white' }} />
                 </IconButton>
                 <IconButton>

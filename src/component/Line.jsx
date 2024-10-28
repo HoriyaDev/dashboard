@@ -5,14 +5,15 @@ import {
   Line,
   XAxis,
   YAxis,
-
+  ResponsiveContainer,
   Tooltip,
   Legend,
 } from "recharts";
 import { revenueData } from '../utils/constant';
 
-export default function LineChart() { 
+export default function LineGraph() { 
   return (
+    <ResponsiveContainer width="100%" height={450}>
     <RechartsLineChart width={600} height={300}  data={revenueData}>
       
       <XAxis dataKey="name" sx={{color:"white"}} />
@@ -23,5 +24,6 @@ export default function LineChart() {
       <Line type="monotone" dataKey="uv" stroke="#d64161" />
       <Line type="monotone" dataKey="amt" stroke="#e3eaa7" />
     </RechartsLineChart>
+    </ResponsiveContainer>
   );
 }

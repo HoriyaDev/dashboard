@@ -14,10 +14,10 @@ import {barData} from '../utils/constant'
 const BarGraph = () => {
   
   return (
-    <ResponsiveContainer width="100%" height={250}>
+    <ResponsiveContainer width="100%" height={250} >
       <BarChart
         width={700}
-        height={300}
+        height={700}
         data={barData}
         margin={{
           top: 30,

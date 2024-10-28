@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import GetAppOutlinedIcon from '@mui/icons-material/GetAppOutlined';
-import LineChart from '../../Graphs/LineChart';  // Assuming LineChart is a component for displaying charts
+import LineGraph from '../../Graphs/LineGraph';  // Assuming LineChart is a component for displaying charts
 
 export default function Revenue() {
   return (
@@ -22,7 +22,7 @@ export default function Revenue() {
               <GetAppOutlinedIcon />
             </IconButton>
           </Box>
-          <LineChart />
+          <LineGraph />
         </CardContent>
       </Card>
     </Box>
